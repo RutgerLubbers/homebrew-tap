@@ -5,21 +5,21 @@
 class Cage < Formula
   desc "Cross-platform sandbox CLI for restricting filesystem access"
   homepage "https://github.com/RutgerLubbers/cage"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RutgerLubbers/cage/releases/download/v0.4.0/cage_Darwin_x86_64.tar.gz"
-      sha256 "6228abb6a04d83e31bd0a06b8b537d0fd3b91096dbb60ad80f9243efa737bfbc"
+      url "https://github.com/RutgerLubbers/cage/releases/download/v0.5.0/cage_Darwin_x86_64.tar.gz"
+      sha256 "78b58d9d70e54e289b48d024f28ba275f42e35e8fbcbaf68434ff7c289763c37"
 
       def install
         bin.install "cage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RutgerLubbers/cage/releases/download/v0.4.0/cage_Darwin_arm64.tar.gz"
-      sha256 "5db136688b15f8eb5817998e8411339d62533ff48bda173f56716eb4ddcceb60"
+      url "https://github.com/RutgerLubbers/cage/releases/download/v0.5.0/cage_Darwin_arm64.tar.gz"
+      sha256 "fb7ff7498155c3c36a9242de02d99bcb6146cef1b6ae29562aabeaf4941a4960"
 
       def install
         bin.install "cage"
@@ -29,15 +29,15 @@ class Cage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RutgerLubbers/cage/releases/download/v0.4.0/cage_Linux_x86_64.tar.gz"
-      sha256 "09b808cd0cbc0248f05698c890defefb1700e6c985ea1ab728b722cbe196bc17"
+      url "https://github.com/RutgerLubbers/cage/releases/download/v0.5.0/cage_Linux_x86_64.tar.gz"
+      sha256 "fa1199371be62fcdaa34d21d54f70cfc6b620df75275eda4dcdfe235a9dab5d2"
       def install
         bin.install "cage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RutgerLubbers/cage/releases/download/v0.4.0/cage_Linux_arm64.tar.gz"
-      sha256 "ab13f05f78110f6d16fba9e140de385f1156018e9f8a5d2b2d8253854be2c157"
+      url "https://github.com/RutgerLubbers/cage/releases/download/v0.5.0/cage_Linux_arm64.tar.gz"
+      sha256 "e1126c729bb58aa4d0714ada3d7675eb3137451f7ef44e108c795d113f9e0c97"
       def install
         bin.install "cage"
       end
